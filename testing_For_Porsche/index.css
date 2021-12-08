@@ -1,0 +1,165 @@
+.main_menu{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+.menu{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.ON{
+    background-color: royalblue;
+}
+
+.menu li{
+    cursor: pointer;
+    padding: 20px;
+    height: 60px;
+    width: auto;
+    color: black;
+    background-color: rgb(248, 244, 244);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    font-size: 14px;
+    font-family: sans-serif;
+
+}
+
+.menu li:hover{
+    color: red;
+}
+
+.sab_menu{
+    display: flex;
+    flex-direction: column;
+    top: 60px;
+    position: absolute;
+}
+
+.menu li .sab_menu{
+    display: none;
+}
+
+.menu li:hover .sab_menu{
+    display: flex;
+}
+
+.sab_menu li{
+    cursor: pointer;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 220px;
+    height: 78px;
+}
+
+.sab_menu li:hover{
+    background-color: red;
+    color: white;
+}
+
+.menu_item_1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    right: -250px;
+    top: 10px;
+}
+
+.menu_item_1 li{
+    cursor: pointer;
+    width: 248px;
+    height: 50px;
+    z-index: 5;
+}
+
+
+.felx_visible{
+    display: flex;
+}
+
+.sab_menu li .menu_item_1{
+    display: none;
+}
+
+.img-911-day{
+    background-position: right;
+    background-image: url('https://porsche.ua/images/doc/a/e/ae130d6-porsche-normal.jpg');
+}
+.img-911-might{
+    background-position: right;
+    background-image: url('https://porsche.ua/images/doc/2/5/250f5e1-porsche-normal--2-.jpg');
+}
+
+.img-718-night{
+    background-position: right;
+    background-image: url('https://porsche.ua/images/doc/f/3/f32dbad-porsche-normal--28-.jpg');
+}
+
+.img-day-tycan{
+    background-position: right;
+    background-image: url('https://porsche.ua/images/doc/a/1/a1e8eda-porsche-normal.jpg');
+}
+
+.img-panamera-day{
+    background-position: right;
+    background-image: url('https://porsche.ua/images/doc/3/d/3d66d29-porsche-normal.jpg');
+}
+
+
+
+.img-718-day{
+    background-position: right;
+    background-image: url('https://porsche.ua/images/doc/a/1/a1e8eda-porsche-normal.jpg');
+}
+
+.img-cayen-day{
+    background-position: right;
+    background-image: url('https://porsche.ua/images/doc/a/b/ab55886-porsche-normal--37-.jpg');
+}
+
+.img-cayen-night{
+    background-position: top;
+    background-image: url('https://porsche.ua/images/doc/7/6/7619cfb-porsche-preview.jpg');
+}
+
+.sab_menu li:hover .menu_item_1{
+    display: flex;
+}
+
+
+.content::before{
+    content: '';
+    display: none;
+}
+
+.menu_item_1 .li:hover .content::after{
+    content: '';
+    display: flex;
+}
+
+
+.sab_menu::after {
+    content: ''; 
+    position: absolute; /* Абсолютное позиционирование */
+    top: -20px; left: 110px;  /* Положение треугольника */
+    border: 10px solid transparent; /* Прозрачные границы */
+    border: 10px solid transparent; border-bottom: 11px solid red;
+}
+
+
+#panamera:hover .mode-panamera{
+    background-color: red;
+    color: white;
+}
+
+
